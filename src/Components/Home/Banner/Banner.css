@@ -1,0 +1,41 @@
+section div h1{
+ /* height: 15.75rem; */
+left: 18.75rem;
+top:15.75rem;
+
+font-family: 'Manrope';
+font-style: normal;
+font-size: 5rem;
+/* line-height: 6.25rem; */
+
+color: #1A1919;
+}
+section div h1 span{
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+
+}
+section div p{
+    font-family: 'Manrope';
+font-style: normal;
+font-size: 1.125rem;
+margin-bottom: 1.25rem;
+color: #757575;
+}
+section div button{
+padding: 11px 16px;
+gap: 10px;
+left: 300px;
+top: 698px;
+color: #FFFFFF;
+background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+border-radius: 8px;
+}
+/* section div img{
+    width: 816px;
+height: 744px;
+left: 940px;
+top: 156px;
+} */
