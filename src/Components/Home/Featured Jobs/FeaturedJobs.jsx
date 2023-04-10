@@ -13,7 +13,7 @@ useEffect(()=>{
         <div className='m-2'>
             <h1 className='text-4xl font-bold text-center'>Featured Jobs</h1>
             <p className='p-3 text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
-       <div className='grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4'>
+       <div className='grid grid-cols-1 gap-4 md:grid-cols-2'>
        {
                allJObs.map(job=><SingleJob key={job.id} job={job}></SingleJob>)
        }
