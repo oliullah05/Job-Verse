@@ -59,6 +59,8 @@ const Header = () => {
             <NavLink className={`ml-4 text-white ${({ isActive }) => isActive ? "active" : ""}`} to="/blog">Blog</NavLink>
 
             <NavLink className={`ml-4 text-white ${({ isActive }) => isActive ? "active" : ""}`} to="/job">Job</NavLink>
+
+            <NavLink className={`ml-4 text-white ${({ isActive }) => isActive ? "active" : ""}`} to="/local">Local</NavLink>
           </div>
           <button className='md:hidden' onClick={toggleMobileMenu}>
             <svg className="h-8 w-8 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">

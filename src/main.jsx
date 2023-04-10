@@ -10,6 +10,7 @@ import Header from './Components/Header/Header.jsx';
 import Home from './Components/Home/Home';
 import SingleDetails from './Components/SingleDetails/SingleDetails.jsx';
 import Statistics from './Components/Statistics/statistics';
+import Local from './Components/Local/Local';
 
 
 
@@ -37,6 +38,11 @@ const router = createBrowserRouter([
       {
         path:"/job",
         element:<SingleDetails></SingleDetails>,
+      },
+      {
+        path:"/local",
+        element:<Local></Local>,
+        loader:()=>fetch("Jobs.json")
       }
     ]
   },
