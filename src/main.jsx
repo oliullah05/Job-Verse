@@ -1,4 +1,5 @@
 import React from 'react'
+
 import ReactDOM from 'react-dom/client'
 import './index.css'
 import {
@@ -7,6 +8,10 @@ import {
 } from "react-router-dom";
 import Header from './Components/Header/Header.jsx';
 import Home from './Components/Home/Home';
+import SingleDetails from './Components/SingleDetails/SingleDetails.jsx';
+import Statistics from './Components/Statistics/statistics';
+
+
 
 const router = createBrowserRouter([
   {
@@ -14,12 +19,12 @@ const router = createBrowserRouter([
     element: <Header></Header>,
     children:[
       {
-        path:"/home",
+        path:"/",
         element: <Home></Home>
       },
       {
         path:"/statistics",
-        element: <div>staatics</div>,
+        element: <Statistics></Statistics>
       },
       {
         path:"/applied_jobs",
@@ -29,6 +34,10 @@ const router = createBrowserRouter([
         path:"/blog",
         element: <div>Blog</div>,
       },
+      {
+        path:"/job",
+        element:<SingleDetails></SingleDetails>,
+      }
     ]
   },
 ]);
