@@ -44,6 +44,7 @@ const Header = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+
   return (
     <>
       <nav className='text-2xl p-3 bg-slate-500 flex justify-between container mx-auto'>

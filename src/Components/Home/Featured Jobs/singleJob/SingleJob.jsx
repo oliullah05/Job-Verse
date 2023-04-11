@@ -1,8 +1,11 @@
 import React from 'react';
 import "./SingleJob.css"
+import { Link, Navigate } from 'react-router-dom';
 
 const SingleJob = ({ job }) => {
-    const { job_title, company_logo, company_name, remote_or_onsite, location, fulltime_or_parttime, salary } = job;
+ 
+    const {id, job_title, company_logo, company_name, remote_or_onsite, location, fulltime_or_parttime, salary } = job;
+
     return (
         <div className='p-8 flex flex-col'>
             <img className='w-28 h-50 my-auto' src={company_logo} alt="" />
@@ -21,10 +24,10 @@ const SingleJob = ({ job }) => {
                     <img className='h-[100%]' src="https://devrahat.com/assets/Icons/Frame.png" alt="" />Salary:  {salary}</p>
             </div>
             <div>
-                <button className='px-5 py-2 details-btn my-5'>View Details</button>
+               <Link to={`job/${id}`}> <button className='px-5 py-2 details-btn my-5'>View Details</button></Link>
             </div>
 
-
+            
         </div>
     );
 };

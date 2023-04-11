@@ -1,9 +1,11 @@
 
 import "./description.css"
 
-const Description = ({des}) => {
+const Description = ({id,des}) => {
  const {job_description,job_responsibilities,educational_requirements,required_experience,contact_information,salary,job_title,location}=des;
-console.log(des);
+
+
+
     return (
         <section className="container mx-auto my-5 flex gap-4 p-5">
 
