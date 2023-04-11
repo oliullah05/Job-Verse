@@ -59,7 +59,7 @@ const Header = () => {
 
             <NavLink className={`ml-4 text-white ${({ isActive }) => isActive ? "active" : ""}`} to="/blog">Blog</NavLink>
 
-            <NavLink className={`ml-4 text-white ${({ isActive }) => isActive ? "active" : ""}`} to="/job">Job</NavLink>
+        
 
             <NavLink className={`ml-4 text-white ${({ isActive }) => isActive ? "active" : ""}`} to="/local">Local</NavLink>
           </div>
