@@ -12,7 +12,8 @@ const Banner = () => {
 
 
            <div>
-<img src="../../../../assets/All Images/P3OLGJ1 copy 1.png" alt="" />
+<img src="https://devrahat.com/assets/All%20Images/P3OLGJ1%20copy%201.png" alt="" />
+
            </div>
         </section>
     );

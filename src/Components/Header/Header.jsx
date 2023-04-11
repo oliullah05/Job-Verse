@@ -63,12 +63,13 @@ const Header = () => {
             <NavLink className={`ml-4 text-white ${({ isActive }) => isActive ? "active" : ""}`} to="/local">Local</NavLink>
           </div>
           <button className='md:hidden' onClick={toggleMobileMenu}>
-            <svg className="h-8 w-8 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <svg className="h-8 w-8 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
               {isMobileMenuOpen ? (
-                <path d="M19.415,4.585l-14,14 M5.415,4.585l14,14"></path>
+                <path d="M0 3h20v2H0V3zm0 7h20v2H0v-2zm0 7h20v2H0v-2z" fillRule="evenodd"></path>
               ) : (
-                <path d="M4,6H20 M4,12H20 M4,18H20"></path>
+                <path d="M0 3h20v2H0V3zm0 7h20v2H0v-2zm0 7h20v2H0v-2z" fillRule="evenodd"></path>
               )}
+        
             </svg>
           </button>
         </div>
@@ -209,5 +210,81 @@ export default Header;
 
 
 
+// import React, { useState } from 'react';
+// import { NavLink, Outlet } from 'react-router-dom';
+// import './Header.css';
 
+// const Header = () => {
+//   const [isOpen, setIsOpen] = useState(false);
+
+//   const toggleMenu = () => {
+//     setIsOpen(!isOpen);
+//   };
+
+//   return (
+//     <>
+//       <nav className="text-2xl p-3 bg-slate-500 flex justify-between container mx-auto">
+//         <h1 className="text-3xl hidden md:block">Job Nexus</h1>
+//         <button className="block sm:hidden" onClick={toggleMenu}>
+//           <svg
+//             className="w-6 h-6 fill-current text-white"
+//             viewBox="0 0 20 20"
+//             xmlns="http://www.w3.org/2000/svg"
+//           >
+//             <title>Menu</title>
+//             <path
+//               d="M0 3h20v2H0V3zm0 7h20v2H0v-2zm0 7h20v2H0v-2z"
+//               fillRule="evenodd"
+//             />
+//           </svg>
+//         </button>
+//         <div className={`sm:flex ${isOpen ? 'block' : 'hidden'}`}>
+//           <NavLink
+//             className="block sm:inline-block ml-4 text-white"
+//             to="/"
+//             onClick={toggleMenu}
+//           >
+//             Home
+//           </NavLink>
+
+//           <NavLink
+//             className="block sm:inline-block ml-4 text-white"
+//             to="/statistics"
+//             onClick={toggleMenu}
+//           >
+//             Statistics
+//           </NavLink>
+
+//           <NavLink
+//             className="block sm:inline-block ml-4 text-white"
+//             to="/applied_jobs"
+//             onClick={toggleMenu}
+//           >
+//             Applied Jobs
+//           </NavLink>
+
+//           <NavLink
+//             className="block sm:inline-block ml-4 text-white"
+//             to="/blog"
+//             onClick={toggleMenu}
+//           >
+//             Blog
+//           </NavLink>
+
+//           <NavLink
+//             className="block sm:inline-block ml-4 text-white"
+//             to="/job"
+//             onClick={toggleMenu}
+//           >
+//             Job
+//           </NavLink>
+//         </div>
+//         <button className="hidden sm:block">Start Applying</button>
+//       </nav>
+//       <Outlet />
+//     </>
+//   );
+// };
+
+// export default Header;
 

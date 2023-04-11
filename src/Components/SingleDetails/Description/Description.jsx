@@ -5,7 +5,7 @@ const Description = ({des}) => {
  const {job_description,job_responsibilities,educational_requirements,required_experience,contact_information,salary,job_title,location}=des;
 console.log(des);
     return (
-        <section className="container mx-auto my-5 flex gap-4">
+        <section className="container mx-auto my-5 flex gap-4 p-5">
 
             <div className="basis-1/2">
 <p className="mb-5"><span className="font-semibold">Job Description:-</span>{job_description}</p>
