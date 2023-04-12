@@ -13,13 +13,20 @@ const LocalDesign = ({data}) => {
 
             <div className='basis-[50%] p-6'>
                 <h1 className='text-3xl font-bold py-4'>{job_title}</h1>
-                <p className='text-2xl'>{company_name}</p>
+                <p className='text-2xl pt-2 mb-4'>{company_name}</p>
+
+                <p className='py-4 flex gap-4'>
+                <button className='btn-outlined '>{remote_or_onsite}</button>
+                <button className='btn-outlined '>{fulltime_or_parttime}</button>
+            </p>
+
+
                 <div className='flex gap-4'>
-                <p className='inline-flex'><img className='h-[75%] my-auto' src="../../../../../assets/Icons/Frame-4.png" alt="" /><span>{location}</span></p>
+                <p className='inline-flex items-center'><img className='h-[75%] my-auto' src="https://devrahat.com/assets/Icons/Frame-4.png" alt="" /><span>{location}</span></p>
 
 
-                <p className='inline-flex'>
-                    <img className='h-[75%]' src="../../../../../assets/Icons/Frame.png" alt="" />Salary:  {salary}</p>
+                <p className='inline-flex items-center'>
+                    <img className='h-[75%]' src="https://devrahat.com/assets/Icons/Frame.png" alt="" />Salary:  {salary}</p>
             </div>
             </div>
 

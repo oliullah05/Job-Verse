@@ -7,13 +7,14 @@ const SingleJob = ({ job }) => {
     const {id, job_title, company_logo, company_name, remote_or_onsite, location, fulltime_or_parttime, salary } = job;
 
     return (
-        <div className='p-8 flex flex-col'>
-            <img className='w-28 h-50 my-auto' src={company_logo} alt="" />
+       <section className='md:p-8 '>
+         <div className='p-8 flex flex-col border border-stone-200 rounded-lg  lg:pl-20 '>
+            <img className='logo w-28  my-auto' src={company_logo} alt="" />
             <h1 className='text-2xl font-bold mt-5 mb-3'>{job_title}</h1>
             <p className='mb-2'>{company_name}</p>
             <p className='py-4 flex gap-4'>
-                <button className='btn btn-outline'>{remote_or_onsite}</button>
-                <button className='btn btn-outline '>{fulltime_or_parttime}</button>
+                <button className='btn-outlined '>{remote_or_onsite}</button>
+                <button className='btn-outlined '>{fulltime_or_parttime}</button>
             </p>
 
             <div className='flex gap-4'>
@@ -29,6 +30,7 @@ const SingleJob = ({ job }) => {
 
             
         </div>
+       </section>
     );
 };
 

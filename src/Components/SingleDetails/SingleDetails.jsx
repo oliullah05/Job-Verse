@@ -89,7 +89,7 @@ const SingleDetails = () => {
          <br />
     
    
-         <Link to="/local"><div onClick={()=>handleAddToCart(id)} className="btn btn-active btn-primary mt-5">Apply Now</div></Link>
+         <div onClick={()=>handleAddToCart(id)} className="btn btn-active btn-primary mt-5">Apply Now</div>
                 </div>
     
                 

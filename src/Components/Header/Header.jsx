@@ -46,22 +46,23 @@ const Header = () => {
 
 
   return (
-    <>
+    <section className='header'>
       <nav className='text-2xl p-3 bg-slate-500 flex justify-between container mx-auto'>
-        <h1 className='text-3xl'>Job Nexus</h1>
+        <h1 className='text-3xl'>Job-Verse</h1>
         <div className='flex items-center'>
           <div className='hidden md:flex'>
             <NavLink className={`ml-4 text-white ${({ isActive }) => isActive ? "active" : ""}`} to="/">Home</NavLink>
 
             <NavLink className={`ml-4 text-white ${({ isActive }) => isActive ? "active" : ""}`} to="/statistics">Statistics</NavLink>
 
+
             <NavLink className={`ml-4 text-white ${({ isActive }) => isActive ? "active" : ""}`} to="/applied_jobs">Applied Jobs</NavLink>
 
+            
             <NavLink className={`ml-4 text-white ${({ isActive }) => isActive ? "active" : ""}`} to="/blog">Blog</NavLink>
 
         
 
-            <NavLink className={`ml-4 text-white ${({ isActive }) => isActive ? "active" : ""}`} to="/local">Local</NavLink>
           </div>
           <button className='md:hidden' onClick={toggleMobileMenu}>
             <svg className="h-8 w-8 fill-current text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
@@ -86,7 +87,7 @@ const Header = () => {
         </div>
       )}
       <Outlet />
-    </>
+    </section>
   );
 };
 

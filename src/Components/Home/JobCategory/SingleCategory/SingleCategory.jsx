@@ -5,7 +5,7 @@ const SingleCategory = ({singleCategory}) => {
     const {id,Category_logo,Category_name,Jobs_available}=singleCategory;
 
     return (
-        <div className='p-5'>
+        <div className='SingleCategory p-5'>
             <img className='py-5' src={Category_logo} alt="" />
             <h1 className='text-2xl font-bold'>{Category_name}</h1>
             <p className='py-5'>{Jobs_available}</p>

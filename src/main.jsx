@@ -12,6 +12,8 @@ import SingleDetails from './Components/SingleDetails/SingleDetails.jsx';
 import Statistics from './Components/Statistics/statistics';
 import Local from './Components/Local/Local';
 import cartJobsLoader from './Loaders/cartJobsLoader';
+import Blog from './Components/Blog/Blog';
+import ErrorPage from './Components/ErrorPage/ErrorPage';
 
 
 
@@ -19,6 +21,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Header></Header>,
+    errorElement:<ErrorPage></ErrorPage>,
     children:[
       {
         path:"/",
@@ -32,20 +35,17 @@ const router = createBrowserRouter([
         path:"/statistics",
         element: <Statistics></Statistics>
       },
-      {
-        path:"/applied_jobs",
-        element: <div>JOBS</div>,
-      },
+    
       {
         path:"/blog",
-        element: <div>Blog</div>,
+        element: <Blog></Blog>
       },
       {
         path:"/job",
         element:<SingleDetails></SingleDetails>,
       },
       {
-        path:"/local",
+        path:"/applied_jobs",
         element:<Local></Local>,
         loader: cartJobsLoader
       }
