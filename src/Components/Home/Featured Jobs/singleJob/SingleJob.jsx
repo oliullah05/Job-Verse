@@ -18,14 +18,14 @@ const SingleJob = ({ job }) => {
             </p>
 
             <div className='flex gap-4'>
-                <p className='inline-flex'><img className='h-[100%]' src="https://devrahat.com/assets/Icons/Frame-4.png" alt="" /><span>{location}</span></p>
+                <p className='inline-flex items-center'><img className='md:h-[100%] h-9' src="https://devrahat.com/assets/Icons/Frame-4.png" alt="" /><span>{location}</span></p>
 
 
-                <p className='inline-flex'>
-                    <img className='h-[100%]' src="https://devrahat.com/assets/Icons/Frame.png" alt="" />Salary:  {salary}</p>
+                <p className='inline-flex items-center'>
+                    <img className='md:h-[100%]  h-9' src="https://devrahat.com/assets/Icons/Frame.png" alt="" />Salary:  {salary}</p>
             </div>
             <div>
-               <Link to={`job/${id}`}> <button className='px-5 py-2 details-btn my-5'>View Details</button></Link>
+               <Link to={`job/${id}`}> <button className='px-5 py-3 mb-auto details-btn my-5'>View Details</button></Link>
             </div>
 
             
