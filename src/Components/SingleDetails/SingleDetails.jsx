@@ -1,27 +1,53 @@
 import React, { useEffect, useState } from 'react';
 import Description from './Description/Description';
 import Details from './Details/Details';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import { addToDb } from '../../Utilities/fakeDb';
 
 
 const SingleDetails = () => {
- const {id}=useParams()
+
+
+
+
+
+
+ const {paramsID}=useParams()
 
  const [datum ,setData]  = useState({})
  useEffect(()=>{
      fetch("/Jobs.json")
      .then(res=>res.json())
      .then(data=>{
-        const job = data.find((job) => job.id.toString() === id);
+        const job = data.find((job) => job.id.toString() === paramsID);
         setData(job);
      })
      
-    },[id])
+    },[paramsID])
  
     // const {job_title, company_logo, company_name, remote_or_onsite, location, fulltime_or_parttime, salary } = datum;
-    const {job_title, company_logo, company_name, remote_or_onsite, location, fulltime_or_parttime, salary, job_description, job_responsibilities, educational_requirements, required_experience, contact_information } = datum;
-    console.log(contact_information?'yes':"no")
+    const {id,job_title, company_logo, company_name, remote_or_onsite, location, fulltime_or_parttime, salary, job_description, job_responsibilities, educational_requirements, required_experience, contact_information } = datum;
+    // console.log(contact_information?'yes':"no")
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    const handleAddToCart=(id)=>{
+        addToDb(id)
+    }
+    
            return (
             <section className="container mx-auto my-5 flex gap-4 p-5">
     
@@ -62,7 +88,8 @@ const SingleDetails = () => {
          <div className="inline-flex"><img src="https://devrahat.com/assets/Icons/Frame-4.png" alt="" /><span  className="font-bold" >Address:-</span>{location}</div>
          <br />
     
-         <div className="btn btn-active btn-primary mt-5">Apply Now</div>
+   
+         <Link to="/local"><div onClick={()=>handleAddToCart(id)} className="btn btn-active btn-primary mt-5">Apply Now</div></Link>
                 </div>
     
                 

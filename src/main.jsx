@@ -11,6 +11,7 @@ import Home from './Components/Home/Home';
 import SingleDetails from './Components/SingleDetails/SingleDetails.jsx';
 import Statistics from './Components/Statistics/statistics';
 import Local from './Components/Local/Local';
+import cartJobsLoader from './Loaders/cartJobsLoader';
 
 
 
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
         element: <Home></Home>
       },
       {
-        path:"job/:id",
+        path:"job/:paramsID",
         element:<SingleDetails></SingleDetails>
       },
       {
@@ -46,7 +47,7 @@ const router = createBrowserRouter([
       {
         path:"/local",
         element:<Local></Local>,
-        loader:()=>fetch("Jobs.json")
+        loader: cartJobsLoader
       }
     ]
   },

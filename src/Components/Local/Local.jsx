@@ -3,13 +3,13 @@ import { useLoaderData } from 'react-router-dom';
 import LocalDesign from './LocalDesign';
 
 const Local = () => {
-    const datum =useLoaderData()
-  
+
+const {savedCart}=useLoaderData();
     
     return (
         <section className=''>
          {
-            datum.map(data=><LocalDesign data={data}></LocalDesign>)
+            savedCart.map(data=><LocalDesign data={data}></LocalDesign>)
          }
         </section>
     );
