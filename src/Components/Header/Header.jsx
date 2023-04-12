@@ -82,8 +82,7 @@ const Header = () => {
           <NavLink className={`block text-white py-2`} to="/" onClick={toggleMobileMenu}>Home</NavLink>
           <NavLink className={`block text-white py-2`} to="/statistics" onClick={toggleMobileMenu}>Statistics</NavLink>
           <NavLink className={`block text-white py-2`} to="/applied_jobs" onClick={toggleMobileMenu}>Applied Jobs</NavLink>
-          <NavLink className={`block text-white py-2`} to="/blog" onClick={toggleMobileMenu}>Blog</NavLink>
-          <NavLink className={`block text-white py-2`} to="/job" onClick={toggleMobileMenu}>Job</NavLink>
+          <NavLink className={`block text-white py-2`} to="/blog" onClick={toggleMobileMenu}>Blog</NavLink>        
         </div>
       )}
       <Outlet />
