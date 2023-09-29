@@ -17,4 +17,4 @@ It's a job-finding website where candidate find and apply job all over the world
 
 ## Live Link
 
-Hosted in Netlify -> [Job-Verse](https://poetic-biscochitos-0c14a9.netlify.app)
+Hosted in Netlify -> [Job-Verse](https://job-verse.netlify.app/)
